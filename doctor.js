@@ -17,6 +17,10 @@ export default class Doctor {
     this._cedula = cedula;
   }
 
+  getNombreDoc(){
+    return (`${this._nombre.getNombreCompleto()}`)
+  }
+
   getPerfil() {
     return `${this._cedula}, ${
       this._especialidad
